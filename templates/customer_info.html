@@ -1,0 +1,736 @@
+{% extends 'customer_base.html' %}
+{% block rightslider %}
+    <div class="usermanage_rightslider"
+         style="border:1px solid #ddd;padding-bottom:20px;vertical-align: top;display:none;">
+        <div class="usermanage_content">
+            <div class="bit-order-list">
+                <div class="my_new_order_h2 ">
+                    <a class="onlyleft"
+                       style="margin-left:15px;cursor:pointer;"
+                       onclick="open_user_back();"><span
+                            class="fa fa-angle-left"></span>返回</a>
+                    <i class="fa fa-user onlyright"
+                       style="margin-right:10px;"></i>个人资料
+                </div>
+
+
+                <div class="my_tab_content">
+                    <div class="order_list"
+                         style="position:relative;min-height:300px;">
+
+                        <div class="order_detail">
+                            <div class="qfy-element qfyuser qfyuser-532 qfyuser-id-1 qfyuser-float"
+                                 data-modal_profile_saved="您的个人资料已保存！"
+                                 data-template="edit"
+                                 data-uploads_dir="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/qfy-content/uploads/qfyuser/"
+                                 data-default_avatar_male="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/qfy-content/plugins/qfyuser/img/default_avatar_male.jpg"
+                                 data-default_avatar_female="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/qfy-content/plugins/qfyuser/img/default_avatar_male.jpg"
+                                 data-skin="elegant"
+                                 data-required_text="此项必须填写"
+                                 data-password_too_short="你的密码太短了"
+                                 data-passwords_do_not_match="两个密码不匹配"
+                                 data-password_not_strong="密码不够强高"
+                                 data-keep_one_section_open="0"
+                                 data-allow_sections="1"
+                                 data-permalink="0"
+                                 data-field_icons="0"
+                                 data-profile_thumb_size="80"
+                                 data-register_heading="注册帐号"
+                                 data-register_side="注册会员点这里"
+                                 data-register_side_action="login"
+                                 data-register_button_action="login"
+                                 data-register_button_primary="注册"
+                                 data-register_button_secondary="登录"
+                                 data-register_group="default"
+                                 data-register_redirect="0"
+                                 data-type="0"
+                                 data-login_heading="登录"
+                                 data-login_side="忘记密码？点这里找回"
+                                 data-login_side_action="reset"
+                                 data-login_button_action="register"
+                                 data-login_button_primary="登录"
+                                 data-login_button_secondary="注册"
+                                 data-login_group="default"
+                                 data-login_redirect="0"
+                                 data-rememberme="true"
+                                 data-delete_heading="删除个人资料"
+                                 data-delete_side="取消并返回"
+                                 data-delete_side_action="view"
+                                 data-delete_button_action="view"
+                                 data-delete_button_primary="确认删除"
+                                 data-delete_button_secondary="返回到用户资料"
+                                 data-delete_group="default"
+                                 data-reset_heading="重设密码"
+                                 data-reset_side="返回登录"
+                                 data-reset_side_action="login"
+                                 data-reset_button_action="change"
+                                 data-reset_button_primary="发送"
+                                 data-reset_button_secondary="更改您的密码"
+                                 data-reset_group="default"
+                                 data-change_heading="更改您的密码"
+                                 data-change_side="重发验证码"
+                                 data-change_side_action="reset"
+                                 data-change_button_action="reset"
+                                 data-change_button_primary="更新密码"
+                                 data-change_button_secondary="重新发送验证码"
+                                 data-change_group="default"
+                                 data-list_heading="最新成员"
+                                 data-list_per_page="5"
+                                 data-list_sortby="registered"
+                                 data-list_order="desc"
+                                 data-list_users="0"
+                                 data-list_group="default"
+                                 data-list_thumb="50"
+                                 data-list_showthumb="1"
+                                 data-list_showsocial="1"
+                                 data-list_showbio="0"
+                                 data-list_verified="0"
+                                 data-list_relation="or"
+                                 data-online_heading="查看在线用户"
+                                 data-online_thumb="30"
+                                 data-online_showthumb="1"
+                                 data-online_showsocial="0"
+                                 data-online_showbio="0"
+                                 data-online_mini="1"
+                                 data-online_mode="vertical"
+                                 data-edit_button_primary="保存更改"
+                                 data-edit_group="default"
+                                 data-view_group="default"
+                                 data-social_target="_blank"
+                                 data-social_group="default"
+                                 data-card_width="250px"
+                                 data-card_img_width="250"
+                                 data-card_showbio="1"
+                                 data-card_showsocial="1"
+                                 data-link_target="_blank"
+                                 data-error_heading="有错误发生"
+                                 data-memberlist_table="0"
+                                 data-memberlist_table_columns="user_id,picture,name,country,gender,role,email_user,message_user"
+                                 data-show_on_mobile="picture,name,country,email_user,message_user"
+                                 data-memberlist_v2="1"
+                                 data-memberlist_v2_pic_size="86"
+                                 data-memberlist_v2_fields="age,gender,country"
+                                 data-memberlist_v2_bio="1"
+                                 data-memberlist_v2_showbadges="1"
+                                 data-memberlist_v2_showname="1"
+                                 data-memberlist_v2_showsocial="1"
+                                 data-memberlist_pic_size="120"
+                                 data-memberlist_pic_topspace="15"
+                                 data-memberlist_pic_sidespace="30"
+                                 data-memberlist_pic_rounded="1"
+                                 data-memberlist_width="100%"
+                                 data-memberlist_paginate="1"
+                                 data-memberlist_paginate_top="1"
+                                 data-memberlist_paginate_bottom="1"
+                                 data-memberlist_show_name="1"
+                                 data-memberlist_popup_view="0"
+                                 data-memberlist_withavatar="0"
+                                 data-memberlist_verified="0"
+                                 data-memberlist_filters="0"
+                                 data-memberlist_default_search="1"
+                                 data-per_page="12"
+                                 data-sortby="registered"
+                                 data-order="desc"
+                                 data-relation="and"
+                                 data-search="1"
+                                 data-exclude="0"
+                                 data-show_social="1"
+                                 data-registration_closed_side="已经注册了？请登录"
+                                 data-registration_closed_side_action="login"
+                                 data-facebook_redirect="profile"
+                                 data-logout_redirect="0"
+                                 data-postsbyuser_num="12"
+                                 data-postsbyuser_types="post"
+                                 data-postsbyuser_mode="grid"
+                                 data-postsbyuser_thumb="50"
+                                 data-postsbyuser_showthumb="1"
+                                 data-postsbyuser_taxonomy="category"
+                                 data-postsbyuser_category="0"
+                                 data-publish_heading="添加一个新资讯"
+                                 data-publish_button_primary="发布"
+                                 data-layout="float"
+                                 data-margin_top="0"
+                                 data-margin_bottom="0"
+                                 data-align="center"
+                                 data-max_width="100%"
+                                 data-fontcolor="#333"
+                                 data-bzfontcolor="#888"
+                                 data-inputbordercolor="#ddd"
+                                 data-inputborderhovercolor="#aaa"
+                                 data-fonthovercolor="#aaa"
+                                 data-button1color="#000"
+                                 data-button1bordercolor="#000"
+                                 data-button1fontcolor="#fff"
+                                 data-button2color="#fff"
+                                 data-button2bordercolor="#ddd"
+                                 data-button2fontcolor="#666"
+                                 data-linebackground="#666"
+                                 data-linefontcolor="#fff"
+                                 data-line2background="#f5f5f5"
+                                 data-line2fontcolor="#888"
+                                 data-box_background="0"
+                                 data-bg_image="0"
+                                 data-bg_color="0"
+                                 data-bg_image_repeat="no-repeat"
+                                 data-box_border="0"
+                                 data-box_border_settings="0"
+                                 data-box_shadow="0"
+                                 data-box_shadowcolor="#000000"
+                                 data-box_shadowstyle="0"
+                                 data-box_shadowsize="1"
+                                 data-z_index="0"
+                                 data-show_logout_login="0"
+                                 data-show_groups="0"
+                                 data-isshowlabel="0"
+                                 data-login_txt0="0"
+                                 data-login_txt1="0"
+                                 data-login_txt2="0"
+                                 data-login_txt3="0"
+                                 data-login_txt4="0"
+                                 data-custom_template="0"
+                                 data-d_t="1"
+                                 data-allfontsize="12"
+                                 data-fontfamily="0"
+                                 data-input_shadow="0"
+                                 data-input_icon="0"
+                                 data-input_icon_size="0"
+                                 data-input_icon_pos="0"
+                                 data-xhfontcolor="#ff0000"
+                                 data-jgbgcolor="#d14242"
+                                 data-jgbordercolor="#d14242"
+                                 data-jgfontcolor="#fff"
+                                 data-textfontcolor="0"
+                                 data-linecolor="0"
+                                 data-input_icon_color="0"
+                                 data-login_txt_r2_display="0"
+                                 data-login_txt_r3_display="0"
+                                 data-login_txt_r3_displayformat="0"
+                                 data-login_txt_r4_display="0"
+                                 data-login_txt_r5_display="0"
+                                 data-login_txt_r6="取消会员资格"
+                                 data-login_txt_r6_display="1"
+                                 data-login_txt_r7_display="0"
+                                 data-margintop="0"
+                                 data-marginbottom="0"
+                                 data-paddingtop="0"
+                                 data-paddingbottom="0"
+                                 data-paddingleft="0"
+                                 data-paddingright="0"
+                                 data-login_animale="0"
+                                 data-display_device="0"
+                                 data-password_checking="0">
+
+                                <a href="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/?page_id=15787#"
+                                   class="qfyuser-close-popup">关闭</a>
+
+                                <div class="qfyuser-centered ">
+                                    <div style="color:white;text-align:left;padding-left:20px;">
+                                        个人资料
+                                    </div>
+                                    <div class="qfyuser-clear"></div>
+                                </div>
+
+
+                                <div class="qfyuser-body">
+
+
+                                    <form action="{% url 'user:info' %}"
+                                          method="post"
+                                          data-action="edit">
+                                        <div class="qfyuser-field qfyuser-field-display_name "
+                                             data-key="display_name">
+                                            <div class="qfyuser-label">
+                                                <label for="display_name-532">昵称</label><span
+                                                    class="qfyuser-tip"
+                                                    original-title="公开显示的名字"></span>
+                                            </div>
+                                            <div class="qfyuser-input ">
+                                                <input type="text"
+                                                       name="nick_name"
+                                                       id="nick_name"
+                                                       value="{{ request.user.nick_name }}"
+                                                       placeholder=""
+                                                       data-ajaxcheck="display_name_exists"
+                                                       data-help="公开显示的名字"
+                                                       data-label="昵称"
+                                                       data-placeholder=""
+                                                       data-_builtin="1"
+                                                       data-hidden="0"
+                                                       data-hideable="0"
+                                                       data-html="0"
+                                                       data-locked="0"
+                                                       data-private="0"
+                                                       data-required="0"
+                                                       data-type="text"
+                                                       data-woo="0">
+                                                <div class="qfyuser-clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="qfyuser-clear"></div>
+                                        <div class="qfyuser-field qfyuser-field-profilepicture "
+                                             data-key="profilepicture">
+                                            <div class="qfyuser-label">
+                                                <label for="profilepicture-532">照片</label>
+                                            </div>
+                                            <div class="qfyuser-input ">
+                                                <div class="qfyuser-pic qfyuser-pic-profilepicture"
+                                                     data-remove_text="删除">
+                                                    <img src="
+
+                                                            {{ MEDIA_URL }}{{ request.user.image }}"
+                                                         width="64"
+                                                         height="64"
+                                                         alt=""
+                                                         class="default avatar">
+                                                </div>
+                                                <div class="qfyuser-pic-upload ajax-file-upload"
+                                                     data-filetype="picture"
+                                                     data-allowed_extensions="png,gif,jpg,jpeg">
+                                                    上传照片
+                                                </div>
+                                                <input data-required="0"
+                                                       type="hidden"
+                                                       name="profilepicture-532"
+                                                       id="profilepicture-532"
+                                                       value="">
+                                                <div class="qfyuser-clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="qfyuser-clear"></div>
+                                        <div class="qfyuser-field qfyuser-field-first_name "
+                                             data-key="first_name">
+                                            <div class="qfyuser-label">
+                                                <label for="first_name-532">名</label>
+                                            </div>
+                                            <div class="qfyuser-input ">
+                                                <input type="text"
+                                                       name="first_name"
+                                                       id="first_name"
+                                                       value="{{ request.user.last_name|default_if_none:'' }}"
+                                                       placeholder=""
+                                                       data-ajaxcheck=""
+                                                       data-help=""
+                                                       data-label="名"
+                                                       data-placeholder=""
+                                                       data-_builtin="1"
+                                                       data-hidden="0"
+                                                       data-hideable="0"
+                                                       data-html="0"
+                                                       data-locked="0"
+                                                       data-private="0"
+                                                       data-required="0"
+                                                       data-type="text"
+                                                       data-woo="0">
+                                                <div class="qfyuser-clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="qfyuser-clear"></div>
+                                        <div class="qfyuser-field qfyuser-field-last_name "
+                                             data-key="last_name">
+                                            <div class="qfyuser-label">
+                                                <label for="last_name-532">姓</label>
+                                            </div>
+                                            <div class="qfyuser-input ">
+                                                <input type="text"
+                                                       name="last_name"
+                                                       id="last_name"
+                                                       value="{{ request.user.first_name|default_if_none:'' }}"
+                                                       placeholder=""
+                                                       data-ajaxcheck=""
+                                                       data-help=""
+                                                       data-label="姓"
+                                                       data-placeholder=""
+                                                       data-_builtin="1"
+                                                       data-hidden="0"
+                                                       data-hideable="0"
+                                                       data-html="0"
+                                                       data-locked="0"
+                                                       data-private="0"
+                                                       data-required="0"
+                                                       data-type="text"
+                                                       data-woo="0">
+                                                <div class="qfyuser-clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="qfyuser-clear"></div>
+                                        <div class="qfyuser-field qfyuser-field-description "
+                                             data-key="description">
+                                            <div class="qfyuser-label">
+                                                <label for="description-532">生日</label><span
+                                                    class="qfyuser-tip"
+                                                    original-title="生日"></span>
+                                            </div>
+                                            <div class="qfyuser-input ">
+                                                <input type="text"
+                                                       name="birthday"
+                                                       id="birthday"
+                                                       value=" {{ request.user.birthday|date:"Y-m-d" }}"
+                                                       placeholder=""
+                                                       data-ajaxcheck=""
+                                                       data-help=""
+                                                       data-label="生日"
+                                                       data-placeholder=""
+                                                       data-_builtin="1"
+                                                       data-hidden="0"
+                                                       data-hideable="0"
+                                                       data-html="0"
+                                                       data-locked="0"
+                                                       data-private="0"
+                                                       data-required="0"
+                                                       data-type="text"
+                                                       data-woo="0">
+                                                <div class="qfyuser-clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="qfyuser-clear"></div>
+                                        <div class="qfyuser-field qfyuser-field-gender "
+                                             data-key="gender">
+                                            <div class="qfyuser-label">
+                                                <label for="gender-532">性别</label>
+                                            </div>
+                                            <div class="qfyuser-input ">
+                                                <div class="qfyuser-radio-wrap" data-required="0">
+                                                    <label class="qfyuser-radio"><span></span>
+                                                        &nbsp;<input type="radio" name="gender" value="male"
+                                                                     {% ifequal request.user.sex "男" %}checked="checked"{% endifequal %}>男</label>
+                                                    <label class="qfyuser-radio"><span></span>
+                                                        <input type="radio" name="gender" value="female"
+                                                               {% ifequal request.user.sex "女" %}checked="checked"{% endifequal %}>女</label>
+                                                </div>
+                                                <div class="qfyuser-clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="qfyuser-clear"></div>
+                                        <div class="qfyuser-field qfyuser-field-phone_number "
+                                             data-key="phone_number">
+                                            <div class="qfyuser-label">
+                                                <label for="phone_number-532">电话号码</label>
+                                                <div class="required">
+                                                    *
+                                                </div>
+                                            </div>
+                                            <div class="qfyuser-input ">
+                                                <div style="overflow:hidden;position:relative;">
+                                                    <div style="position:absolute;right:0px;top:0px;width:60px;">
+                                                        <input style="width:100%;text-align:center;"
+                                                               data-userid="1"
+                                                               class="qfyuser-button toverifyphone input-after-button"
+                                                               value="验证"
+                                                               type="button">
+                                                    </div>
+                                                    <input type="text"
+                                                           name="mobile"
+                                                           id="mobile"
+                                                           value="{{ request.user.mobile|default_if_none:'' }}"
+                                                           placeholder=""
+                                                           data-ajaxcheck=""
+                                                           data-help=""
+                                                           data-label="电话号码"
+                                                           data-placeholder=""
+                                                           data-_builtin="1"
+                                                           data-hidden="0"
+                                                           data-hideable="0"
+                                                           data-html="0"
+                                                           data-locked="0"
+                                                           data-private="0"
+                                                           data-required="1"
+                                                           data-type="text"
+                                                           data-woo="0">
+                                                </div>
+                                                <div class="qfyuser-clear"></div>
+                                            </div>
+                                        </div>
+                                        <div class="qfyuser-clear"></div>
+
+
+                                        <div class="qfyuser-field qfyuser-submit qfyuser-column">
+
+                                            <input type="submit"
+                                                   value="保存更改"
+                                                   class="qfyuser-button">
+
+                                            <input type="button"
+                                                   value="取消"
+                                                   class="qfyuser-button secondary"
+                                                   style="float:right;"
+                                                   data-template="view">
+
+
+                                            <img src="./customer_info_files/loading.gif"
+                                                 alt=""
+                                                 class="qfyuser-loading">
+                                            <div class="qfyuser-clear"></div>
+
+                                        </div>
+                                        {% csrf_token %}
+                                    </form>
+
+                                </div>
+
+
+                            </div>
+
+
+                            <style type="text/css">
+
+                                div.qfyuser-awsm-pic {
+
+                                    margin-left: -48px;
+                                    top: -48px;
+                                }
+
+                                div.qfyuser-awsm-pic img {
+                                    width: 86px;
+                                    height: 86px;
+                                }
+
+                                div.qfyuser,
+                                div.emd-main,
+                                div.emd-filters,
+                                div.qfyuser-search-results,
+                                div.qfyuser-label label,
+                                div.qfyuser input,
+                                div.qfyuser textarea,
+                                div.qfyuser select,
+                                div.qfyuser-field textarea.qfyuser_editor,
+                                div.qfyuser-msg-overlay-content,
+                                div.qfyuser-msg-overlay-content input,
+                                div.qfyuser-msg-overlay-content textarea,
+                                div.qfyuser-notifier {
+                                    font-family: Roboto;
+                                }
+
+                                div.qfyuser-532 {
+                                    max-width: 100% px;
+                                    width: 100%;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                }
+
+                                div.qfyuser-532.qfyuser-nostyle {
+                                    max-width: 250px;
+                                }
+
+                                div.qfyuser-532.qfyuser-users {
+                                    max-width: 100% !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-user {
+                                    margin-top: 15px;
+                                    margin-left: 30px;
+                                    margin-right: 30px;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-user a.qfyuser-user-img {
+                                    width: 120px;
+                                    height: 120px;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-user a.qfyuser-user-img span {
+                                    top: -120px;
+                                    line-height: 120px;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-user div.qfyuser-user-link {
+                                    width: 120px;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-user a.qfyuser-user-img,
+                                div.qfyuser-532 div.qfyuser-user a.qfyuser-user-img span {
+                                    border-radius: 999px !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-list-item-i {
+                                    width: 50px;
+                                    height: 50px;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-online-item-i {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-online-item {
+                                    border-bottom: 0px !important;
+                                    padding: 10px 0 0 0;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-online-item img.qfyuser-profile-badge,
+                                div.qfyuser-532 div.qfyuser-online-item img.qfyuser-profile-badge-right {
+                                    max-width: 14px !important;
+                                    max-height: 14px !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-profile-img {
+                                    width: 80px;
+                                    height: 80px;
+                                }
+
+                                div.emd-user {
+                                    width: !important;
+                                    margin-left: !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-label label,
+                                div.qfyuser-532 .qfyuser-qfy-action,
+                                div.qfyuser-532 div.qfyuser-profile-name a {
+                                    color: #333 !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-input label.qfyuser-checkbox.hide-field,
+                                div.qfyuser-532 .open_social_box span,
+                                div.qfyuser-532 .open_social_box .login_button,
+                                div.qfyuser-532 .qfyuser-checkbox-wrap,
+                                div.qfyuser-532 div.qfyuser-input label.qfyuser-radio,
+                                div.qfyuser-532 div.qfyuser-input label.qfyuser-checkbox,
+                                div.qfyuser-532.qfyuser .qfyuser-pic-upload,
+                                div.qfyuser-532 .qfyuser-qfy-bz-action,
+                                div.qfyuser-532 .qfyuser-pic-none,
+                                div.qfyuser-532 div.qfyuser-maxwidth div.qfyuser-input label,
+                                div.qfyuser-532 .strength-text {
+                                    color: #888 !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-input input[type="text"],
+                                div.qfyuser-532 div.qfyuser-input input[type="password"],
+                                div.qfyuser-532 div.qfyuser-input select,
+                                div.qfyuser-532 .chosen-container-single .chosen-single,
+                                div.qfyuser-532 div.qfyuser-input textarea,
+                                div.qfyuser-532 .qfyuser-checkbox > span,
+                                div.qfyuser-532 img.qfyuser-img {
+                                    border: 1px solid #ddd !important;
+                                    color: #333 !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-input input[type="text"]:focus,
+                                div.qfyuser-532 div.qfyuser-input input[type="password"]:focus,
+                                div.qfyuser-532 div.qfyuser-input textarea:focus {
+                                    border: 1px solid #aaa !important;
+                                    color: #aaa !important;
+                                }
+
+                                div.qfyuser-532 input.qfyuser-button,
+                                div.qfyuser-532 a.qfyuser-button {
+                                    background: #000 !important;
+                                    border: 1px solid #000 !important;
+                                    color: #fff !important;
+                                    box-shadow: inset 0 1px #000 !important;
+                                }
+
+                                div.qfyuser-532 input.qfyuser-button.secondary,
+                                div.qfyuser-532 a.qfyuser-button.secondary,
+                                div.qfyuser-532 div.qfyuser div.ajax-file-upload {
+                                    background: #fff !important;
+                                    border: 1px solid #ddd !important;
+                                    color: #666 !important;
+                                    box-shadow: inset 0 1px #fff !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-section.qfyuser-collapsed-0 {
+                                    background: #666;
+                                    border: none;
+                                    color: #fff !important;
+                                    text-shadow: none;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-section.qfyuser-collapsed-1 {
+                                    background: #f5f5f5;
+                                    border: none;
+                                    color: #888 !important;
+                                    text-shadow: none;
+                                }
+
+                                div.qfyuser-532 .required {
+                                    color: #ff0000;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-warning {
+                                    background: #d14242 !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-warning {
+                                    border-color: #d14242 !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-warning {
+                                    color: #fff !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-input input[type="text"], div.qfyuser-532 div.qfyuser-input input[type="password"], div.qfyuser-532 div.qfyuser-input textarea
+                                div.qfyuser-532 div.qfyuser-input input[type="text"]:focus, div.qfyuser-532 div.qfyuser-input input[type="password"]:focus, div.qfyuser-532 div.qfyuser-input textarea:focus {
+                                    box-shadow: none !important;
+                                }
+
+                                div.qfyuser-532 .qfyuser-input.fa:before {
+                                    left: 10px;
+                                    position: absolute;
+
+                                    top: 8px;
+                                }
+
+                                div.qfyuser-532 .qfyuser-input.fa.fa-envelope-o:before {
+                                    left: 8px;
+                                    position: absolute;
+                                }
+
+                                div.qfyuser-532 .qfyuser-field div.qfyuser-input.fa input {
+                                    padding-left: 28px !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-label label,
+                                div.qfyuser-532,
+                                div.qfyuser-532 div.qfyuser-input label.qfyuser-checkbox.hide-field,
+                                div.qfyuser-532 div.qfyuser input,
+                                div.qfyuser-532 div.qfyuser textarea,
+                                div.qfyuser-532 div.qfyuser select {
+                                    font-size: 12px !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-input input[type="text"],
+                                div.qfyuser-532 div.qfyuser-input input[type="password"],
+                                div.qfyuser-532 div.qfyuser-input textarea,
+                                div.qfyuser-532 div.qfyuser-input select,
+                                div.qfyuser-532 div.qfyuser-submit input,
+                                div.qfyuser-532 div.qfyuser-section,
+                                div.qfyuser-532 div.qfyuser-input label.qfyuser-radio,
+                                div.qfyuser-532 div.qfyuser-input label.qfyuser-checkbox,
+                                div.qfyuser-532 input.input-after-button {
+                                    font-size: 13px !important;
+                                }
+
+                                div.qfyuser-532 div.qfyuser-input input[type="text"],
+                                div.qfyuser-532 div.qfyuser-input input[type="password"],
+                                div.qfyuser-532 div.qfyuser-submit input,
+                                div.qfyuser-532 .qfyuser-qfy-action,
+                                div.qfyuser-532 input.input-after-button,
+                                div.qfyuser-532 .qfyuser-input img.qfyuser-img {
+                                    height: 30px !important;
+                                    line-height: 30px !important;
+                                }
+
+                                div.qfyuser-532 {
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                }
+
+                                div.qfyuser-532 {
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-right: 0;
+                                    padding-left: 0;
+                                }
+
+                                @media screen and (max-width: 768px) {
+                                    .bit-html div.qfyuser-532 {
+                                        padding: 0px 0px 0px 0px;
+                                    }
+                                }
+                            </style>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

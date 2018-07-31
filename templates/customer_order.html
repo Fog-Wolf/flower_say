@@ -1,0 +1,101 @@
+{% extends 'customer_base.html' %}
+{% block title %}我的订单--花语{% endblock %}
+{% block rightslider %}
+    <div class="usermanage_rightslider"
+         style="border:1px solid #ddd;padding-bottom:20px;vertical-align: top;display:none;">
+        <div class="usermanage_content">
+            <div class="bit-order-list">
+                <div class="my_new_order_h2 ">
+                    <a class="onlyleft" style="margin-left:15px;cursor:pointer;" onclick="open_user_back();">
+                        <span class="fa fa-angle-left"></span>
+                        返回
+                    </a>
+                    <i class="fa fa-calculator onlyright" style="margin-right:10px;"></i>
+                    我的订单
+                </div>
+
+                <div class="my_tab">
+                    <div class="buttons-tab">
+                        <a href="{% url 'operation:user_order' 0 %}"
+                           class="tab-link {% ifequal order_status 0 %}active{% endifequal %} orderbutton">全部订单</a>
+                        <a href="{% url 'operation:user_order' 1 %}"
+                           class="tab-link {% ifequal order_status 1 %}active{% endifequal %} orderbutton">等待中</a><a
+                            href="{% url 'operation:user_order' 2 %}"
+                            class="tab-link {% ifequal order_status 2 %}active{% endifequal %} orderbutton">已取消</a>
+                    </div>
+                </div>
+                <div class="my_tab_content">
+                    <div class="order_list" style="position:relative;">
+                        {% if not orders %}
+                            <div class="empty" style="text-align:center;">
+                                <i class="fa-dropbox fa" style="font-size:150px;color:#EDEDED;padding:20px;"></i>
+                            </div>
+                        {% else %}
+                            <div class="my_tab_content">
+                                <div class="order_list" style="position:relative;">
+                                    {% for order in orders %}
+                                        <div class="order_detail">
+                                            <div class="order_header">
+                                            <span class="order_id">订单： <a style="cursor:pointer;"
+                                                                          href="/operation/order_info/{{ order.id }}">#{{ order.id }}</a></span><span
+                                                    class="order_status">状态：{{ order.status }}</span>
+                                                <span class="order_desc"></span><span class="order_date"><span
+                                                    class="wf-mobile-hidden">日期：{{ order.add_time }}</span></span> <span
+                                                    class="order_money">合计：<span
+                                                    class="amount">¥{{ order.all_pirce }}</span></span>
+                                                <span style="clear:both;"></span>
+                                            </div>
+                                            <div class="order_content_container">
+                                                <div class="shop_table order_content">
+                                                    <div class="p_name">
+                                                        <div class="p_image">
+                                                            <a href="{% url 'goods:info' order.course.id %}"
+                                                               target="_blank">
+                                                                <img width="90" height="90"
+                                                                     src="{{ MEDIA_URL }}{{ order.course.image }}"
+                                                                     class="attachment-shop_thumbnail qf-post-image"
+                                                                     alt=" "
+                                                                     title=" " description="" data-title="p-7-300x300">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="p_blank_1 p_blank"></div>
+                                                        <div class="p_title">
+                                                            <a href="{% url 'goods:info' order.course.id %}"
+                                                               target="_blank">
+                                                                {{ order.course.name }} </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="p_price">
+                                                        {{ order.course.price }}.00 <strong
+                                                            class="product-quantity">× {{ order.nums }}</strong></div>
+                                                    <div class="p_subprice">
+                                                        <span class="amount">¥{{ order.course.price }}</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="order_footer">
+                                                {% ifequal order.status '未支付' %}
+                                                    <a style="margin-left:10px;" target="_blank"
+                                                       href="http://59dadbbaac436.t74.qifeiye.com/?page_id=9621&amp;order-pay=15872&amp;pay_for_order=true&amp;key=wc_order_5b41cbfde0b1a"
+                                                       class=" pay">付款</a>
+                                                {% endifequal %}
+                                                {% ifnotequal order.status '取消' %}
+                                                    <a style="margin-left:10px;cursor:pointer;"
+                                                       href="{% url "operation:order_cancel" order.id %}"
+                                                       class=" cancel">取消</a>
+                                                {% endifnotequal %}<a
+                                                    style="margin-left:10px;cursor:pointer;"
+                                                    href="{% url "operation:order_info" order.id %}"
+                                                    class=" view">查看</a></div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>{% endblock %}
+
+

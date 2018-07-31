@@ -1,0 +1,1032 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}商品详情{% endblock %}
+{% block content %}
+    <div id="main" class="bit_main_content">
+
+
+        <div class="main-gradient"></div>
+
+        <div class="wf-wrap">
+            <div class="wf-container-main">
+
+
+                <div id="content" class="content" role="main">
+
+
+                    <div class="main-outer-wrapper ">
+                        <div class="bit_row">
+
+                            <div class="twelve columns no-sidebar-content ">
+
+                                <div class="bit_row">
+
+                                    <div class="content-wrapper twelve columns ">
+                                        <section data-fixheight=""
+                                                 class="qfy-row-1-5b2f2bd681024436957 section     no  section-text-no-shadow section-inner-no-shadow section-normal"
+                                                 id="bit_sklvg"
+                                                 style="margin-bottom:0;border-radius:0px;border-top:1px dotted rgba(155,155,155,1);border-bottom:1px dotted rgba(155,155,155,1);border-left:0px dotted rgba(155,155,155,1);border-right:0px dotted rgba(155,155,155,1);color:#666666;">
+                                            <style class="row_class qfy_style_class">
+                                                @media only screen and (min-width: 992px) {
+                                                    section.section.qfy-row-1-5b2f2bd681024436957 {
+                                                        padding-left: 0;
+                                                        padding-right: 0;
+                                                        padding-top: 15px;
+                                                        padding-bottom: 15px;
+                                                        margin-top: 0;
+                                                    }
+
+                                                    section.section.qfy-row-1-5b2f2bd681024436957 > .container {
+                                                        max-width: 1280px;
+                                                        margin: 0 auto;
+                                                    }
+                                                }
+
+                                                @media only screen and (max-width: 992px) {
+                                                    .bit-html section.section.qfy-row-1-5b2f2bd681024436957 {
+                                                        padding-left: 15px;
+                                                        padding-right: 15px;
+                                                        padding-top: 15px;
+                                                        padding-bottom: 15px;
+                                                        margin-top: 0;
+                                                        min-height: 0;
+                                                    }
+                                                }
+                                            </style>
+                                            <div data-time="3" data-imagebgs="" class="background-media   "
+                                                 style="background-image: url(&#39;http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/qfy-content/uploads/2017/10/bf7dd7c744c1be50d603af0bfe272930.jpg&#39;); background-repeat:repeat; background-size:auto; background-attachment:scroll; background-position:0 0%;">
+                                            </div>
+
+                                            <div class="section-background-overlay background-overlay grid-overlay-0 "
+                                                 style="background-color: transparent;"></div>
+
+                                            <div class="container">
+                                                <div class="row qfe_row">
+                                                    <div data-animaleinbegin="90%" data-animalename="qfyfadeInUp"
+                                                         data-duration="" data-delay=""
+                                                         class=" qfy-column-1-5b2f2bd68169d54750 qfy-column-inner  vc_span12  text-default small-screen-undefined fullrow"
+                                                         data-dw="1/1" data-fixheight="">
+                                                        <div style=";position:relative;" class="column_inner ">
+                                                            <div class=" background-overlay grid-overlay-"
+                                                                 style="background-color:transparent;width:100%;"></div>
+                                                            <div class="column_containter"
+                                                                 style="z-index:3;position:relative;">
+                                                                <div class="qfy-element qfy_breadhtml "
+                                                                     m-padding="0px 0px 0px 0px" p-padding="0 0 0 0"
+                                                                     css_animation_delay="0"
+                                                                     qfyuuid="qfy_column_breadcrumbs_r1iq6"
+                                                                     style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+                                                                    <nav style="font-size:14px;"><span
+                                                                            class="breadcrumb-text"
+                                                                            style="color:#595959;font-size:14px;font-family:微软雅黑;margin-right:3px;"><a
+                                                                            style="color:#595959;font-size:14px;font-family:微软雅黑;"
+                                                                            class="home"
+                                                                            href="{% url 'index' %}">首页</a></span><span
+                                                                            class="breadcrumb-text"
+                                                                            style="color:#595959;font-size:14px;font-family:微软雅黑;margin-right:3px;"> / </span><span
+                                                                            class="breadcrumb-text"
+                                                                            style="color:#595959;font-size:14px;font-family:微软雅黑;margin-right:3px;"><a
+                                                                            style="color:#595959;font-size:14px;font-family:微软雅黑;"
+                                                                            href="{% url 'goods:list' %}">所有商品</a></span><span
+                                                                            class="breadcrumb-text"
+                                                                            style="color:#595959;font-size:14px;font-family:微软雅黑;margin-right:3px;"> / </span><span
+                                                                            class="breadcrumb-text"
+                                                                            style="color:#595959;font-size:14px;font-family:微软雅黑;margin-right:3px;">{{ goods_info.name }}</span>
+                                                                    </nav>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <style class="column_class qfy_style_class">@media only screen and (min-width: 992px) {
+                                                        .qfy-column-1-5b2f2bd68169d54750 > .column_inner {
+                                                            padding-left: 0;
+                                                            padding-right: 0;
+                                                            padding-top: 0;
+                                                            padding-bottom: 0;
+                                                        }
+
+                                                        .qfe_row .vc_span_class.qfy-column-1-5b2f2bd68169d54750 {
+                                                        }
+
+                                                    ;
+                                                    }
+
+                                                    @media only screen and (max-width: 992px) {
+                                                        .qfy-column-1-5b2f2bd68169d54750 > .column_inner {
+                                                            margin: 0 auto 0 !important;
+                                                            padding-left: 0;
+                                                            padding-right: 0;
+                                                            padding-top:;
+                                                            padding-bottom:;
+                                                        }
+
+                                                        .display_entire .qfe_row .vc_span_class.qfy-column-1-5b2f2bd68169d54750 {
+                                                        }
+
+                                                        .qfy-column-1-5b2f2bd68169d54750 > .column_inner > .background-overlay, .qfy-column-1-5b2f2bd68169d54750 > .column_inner > .background-media {
+                                                            width: 100% !important;
+                                                            left: 0 !important;
+                                                            right: auto !important;
+                                                        }
+                                                    }</style>
+                                                </div>
+                                            </div>
+
+                                        </section>
+                                        <section data-fixheight=""
+                                                 class="qfy-row-2-5b2f2bd683be7160615 section     smfull  section-text-no-shadow section-inner-no-shadow section-normal"
+                                                 id="bit_howxl"
+                                                 style="margin-bottom:0;border-radius:0px;color:#666666;">
+                                            <style class="row_class qfy_style_class">
+                                                @media only screen and (min-width: 992px) {
+                                                    section.section.qfy-row-2-5b2f2bd683be7160615 {
+                                                        padding-left: 0;
+                                                        padding-right: 0;
+                                                        padding-top: 30px;
+                                                        padding-bottom: 100px;
+                                                        margin-top: 0;
+                                                        min-height: 1008px;
+                                                    }
+
+                                                    section.section.qfy-row-2-5b2f2bd683be7160615 > .container {
+                                                        max-width: 1280px;
+                                                        margin: 0 auto;
+                                                    }
+                                                }
+
+                                                @media only screen and (max-width: 992px) {
+                                                    .bit-html section.section.qfy-row-2-5b2f2bd683be7160615 {
+                                                        padding-left: 0;
+                                                        padding-right: 0;
+                                                        padding-top: 0;
+                                                        padding-bottom: 0;
+                                                        margin-top: 0;
+                                                        min-height: 0;
+                                                    }
+                                                }
+                                            </style>
+                                            <div data-time="3" data-imagebgs="" class="background-media   "
+                                                 style="background-image: url(&#39;http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/qfy-content/uploads/2017/10/bf7dd7c744c1be50d603af0bfe272930.jpg&#39;); background-repeat:repeat; background-size:auto; background-attachment:scroll; background-position:0 0%;">
+                                            </div>
+
+                                            <div class="section-background-overlay background-overlay grid-overlay-0 "
+                                                 style="background-color: transparent;"></div>
+
+                                            <div class="container">
+                                                <div class="row qfe_row">
+                                                    <div data-animaleinbegin="90%" data-animalename="qfyfadeInUp"
+                                                         data-duration="1" data-delay=""
+                                                         class=" qfy-column-2-5b2f2bd68407d449506 qfy-column-inner  vc_span12  text-Default small-screen-undefined fullrow"
+                                                         data-dw="1/1" data-fixheight="">
+                                                        <div style="margin-top:0;margin-bottom:0;margin-left:0;margin-right:0;border-radius:0px;;position:relative;"
+                                                             class="column_inner ">
+                                                            <div class=" background-overlay grid-overlay-0"
+                                                                 style="background-color:#ffffff;width:100%;"></div>
+                                                            <div class="column_containter"
+                                                                 style="z-index:3;position:relative;">
+                                                                <section data-fixheight=""
+                                                                         class="qfy-row-3-5b2f2bd684316297866 section     bothfull  section-text-no-shadow section-inner-no-shadow section-normal"
+                                                                         style="margin-bottom:0;border-radius:0px;color:#000000;">
+                                                                    <style class="row_class qfy_style_class">
+                                                                        @media only screen and (min-width: 992px) {
+                                                                            section.section.qfy-row-3-5b2f2bd684316297866 {
+                                                                                padding-left: 0;
+                                                                                padding-right: 0;
+                                                                                padding-top: 0;
+                                                                                padding-bottom: 0;
+                                                                                margin-top: 0;
+                                                                            }
+                                                                        }
+
+                                                                        @media only screen and (max-width: 992px) {
+                                                                            .bit-html section.section.qfy-row-3-5b2f2bd684316297866 {
+                                                                                padding-left: 15px;
+                                                                                padding-right: 15px;
+                                                                                padding-top: 0;
+                                                                                padding-bottom: 0;
+                                                                                margin-top: 0;
+                                                                                min-height: 0;
+                                                                            }
+                                                                        }
+                                                                    </style>
+                                                                    <div class="section-background-overlay background-overlay grid-overlay-0 "
+                                                                         style="background-color: transparent;"></div>
+
+                                                                    <div class="container">
+                                                                        <div class="row qfe_row">
+                                                                            <div data-animaleinbegin="90%"
+                                                                                 data-animalename="qfyfadeInUp"
+                                                                                 data-duration="1" data-delay=""
+                                                                                 class=" qfy-column-3-5b2f2bd6846c1618339 qfy-column-inner  vc_span_class  vc_span9  text-Default small-screen-Default notfullrow"
+                                                                                 data-dw="3/4" data-fixheight="">
+                                                                                <div style="margin-top:0;margin-bottom:0;margin-left:0;margin-right:30px;border-radius:0px;;position:relative;"
+                                                                                     class="column_inner ">
+                                                                                    <div class=" background-overlay grid-overlay-0"
+                                                                                         style="background-color:transparent;width:100%;"></div>
+                                                                                    <div class="column_containter"
+                                                                                         style="z-index:3;position:relative;">
+                                                                                        <div style="margin-top:0;margin-bottom:0;padding-top:19px;padding-bottom:0;padding-right:0;padding-left:0;"
+                                                                                             m-padding="19px 0px 0px 0px"
+                                                                                             p-padding="19px 0 0 0"
+                                                                                             css_animation_delay="0"
+                                                                                             qfyuuid="product_page_vcxpy"
+                                                                                             class="qfy-element bitcommerce "
+                                                                                             id="qfy-product-detail-5b2f2bd6852b7287"
+                                                                                             data-proid="13001">
+                                                                                            <div class="single-product qfy-single-product"
+                                                                                                 data-proid="13001">
+
+
+                                                                                                <div itemscope=""
+                                                                                                     itemtype="http://schema.org/Product"
+                                                                                                     id="product-13001"
+                                                                                                     class="post-13001 product type-product status-publish product shipping-taxable purchasable product-type-simple product-cat-%e6%89%80%e6%9c%89%e5%95%86%e5%93%81 instock site_drag_container">
+
+                                                                                                    <div class="images bitcommerce-main-image">
+
+                                                                                                        <span style="display:block;"
+                                                                                                              class="product_img usezoom"><span
+                                                                                                                itemprop="image"
+                                                                                                                class="main-image zoom"><img
+                                                                                                                class="attachment-shop_single qf-post-image  ag_image"
+                                                                                                                src="
+
+
+                                                                                                                        {{ MEDIA_URL }}{{ goods_info.image }}"
+                                                                                                                alt="p-7-300x300"
+                                                                                                                description=""
+                                                                                                                data-attach-id="14387"
+                                                                                                                data-title="p-7-300x300"
+                                                                                                                title=""
+                                                                                                                src-img="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/qfy-content/uploads/2017/10/17d4cb02a64e451646c89870d0180229.jpg "></span><i></i></span>
+                                                                                                        <div class="thumbnails">
+                                                                                                            <a href="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/?product=%e6%a4%8d%e7%89%a9%e8%8a%b1%e5%8d%89007#"
+                                                                                                               src-img="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/qfy-content/uploads/2017/10/17d4cb02a64e451646c89870d0180229.jpg"
+                                                                                                               class="zoom first"
+                                                                                                               title="p-7-300×300"
+                                                                                                               style="max-width:22.15%;"
+                                                                                                               data-product-src="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/qfy-content/uploads/2017/10/17d4cb02a64e451646c89870d0180229-300x300.jpg"><img
+                                                                                                                    class=" ag_image"
+                                                                                                                    src="
+
+
+                                                                                                                            {{ MEDIA_URL }}{{ goods_info.image }}"
+                                                                                                                    alt="p-7-300x300"
+                                                                                                                    description=""
+                                                                                                                    data-attach-id="14387"
+                                                                                                                    data-title="p-7-300x300"
+                                                                                                                    title=""
+                                                                                                                    src-img="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/qfy-content/uploads/2017/10/17d4cb02a64e451646c89870d0180229.jpg "></a>
+                                                                                                        </div>
+
+
+                                                                                                    </div>
+
+                                                                                                    <div class="summary entry-summary">
+
+                                                                                                        <h1 itemprop="name"
+                                                                                                            class="product_title entry-title">
+                                                                                                            {{ goods_info.name }}</h1>
+                                                                                                        <div class="fg-div small"></div>
+                                                                                                        <div itemprop="offers"
+                                                                                                             itemscope=""
+                                                                                                             itemtype="http://schema.org/Offer">
+
+                                                                                                            <p class="price">
+                                                                                                                <span class="amount">¥{{ goods_info.price }}</span>
+                                                                                                            </p>
+                                                                                                            <meta itemprop="price"
+                                                                                                                  content="{{ goods_info.price }}">
+                                                                                                            <meta itemprop="priceCurrency"
+                                                                                                                  content="CNY">
+                                                                                                            <link itemprop="availability"
+                                                                                                                  href="http://schema.org/InStock">
+
+                                                                                                        </div>
+                                                                                                        <div class="product_meta">
+
+
+                                                                                                            <span class="sku_wrapper">门店地址：
+                                                                                                                {% for store in goods_store %}
+                                                                                                                    <span class="sku"
+                                                                                                                          itemprop="sku">{{ store.store.name }}</span>
+                                                                                                                    &nbsp;
+                                                                                                                {% endfor %}
+                                                                                                            </span>
+
+                                                                                                            <span class="posted_in">分类：<a
+                                                                                                                    href="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/?product_cat=%e6%89%80%e6%9c%89%e5%95%86%e5%93%81"
+                                                                                                                    rel="tag">{{ goods_info.category.name }}</a>&nbsp;</span>
+
+
+                                                                                                        </div>
+
+
+                                                                                                        <div class="">
+                                                                                                            <div class="">
+                                                                                                                <form class="cart"
+                                                                                                                      action="{% url "goods:add_shopping_base" %}"
+                                                                                                                      data-ajax="3"
+                                                                                                                      data-text1="添加成功"
+                                                                                                                      data-text2="去购物车结算"
+                                                                                                                      data-text3="成功加入购物车"
+                                                                                                                      method="post"
+                                                                                                                      enctype="multipart/form-data">
+                                                                                                                    <table border="0"
+                                                                                                                           class="cart_button_table">
+                                                                                                                        <tbody>
+                                                                                                                        <tr>
+                                                                                                                            <td class="cart_button">
+                                                                                                                                <input type="hidden"
+                                                                                                                                       name="goods_id"
+                                                                                                                                       value="{{ goods_info.id }}">
+                                                                                                                                <button type="submit"
+                                                                                                                                        name="ajaxaddcart"
+                                                                                                                                        class="single_add_to_cart_button button alt "
+                                                                                                                                >
+                                                                                                                                    加入购物车
+                                                                                                                                </button>
+                                                                                                                            </td>
+                                                                                                                            <td style="width:15px;">
+                                                                                                                                <div style="min-height:15px;"></div>
+                                                                                                                            </td>
+                                                                                                                        </tr>
+                                                                                                                        </tbody>
+                                                                                                                    </table>
+                                                                                                                    {% csrf_token %}
+                                                                                                                </form>
+
+                                                                                                            </div>
+                                                                                                        </div>
+
+
+                                                                                                    </div>
+                                                                                                    <!-- .summary -->
+
+
+                                                                                                    <div class="bitcommerce-tabs tabbed-content">
+                                                                                                        <ul class="tabs">
+
+                                                                                                            <li class="reviews_tab active">
+                                                                                                                <a class="no-opennew"
+                                                                                                                   href="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/?product=%e6%a4%8d%e7%89%a9%e8%8a%b1%e5%8d%89007#tab-reviews">用户评论
+                                                                                                                    (0)</a>
+                                                                                                            </li>
+
+                                                                                                        </ul>
+
+                                                                                                        <div class="panel entry-content"
+                                                                                                             id="tab-reviews"
+                                                                                                             style="word-break: break-all; display: block;">
+                                                                                                            <div id="reviews">
+                                                                                                                <div id="comments">
+                                                                                                                    <!-- <h2></h2>  -->
+
+                                                                                                                    {% for comments in course_comment %}
+                                                                                                                        {% ifequal comments '' %}
+                                                                                                                            <p class="bitcommerce-noreviews">
+                                                                                                                                目前还未有评论</p>
+                                                                                                                        {% else %}
+                                                                                                                            <li class="f-clear">
+                                                                                                                                <div class="head g-col-1">
+                                                                                                                                    <img src="{{ MEDIA_URL }}{{ comments.user.image }}"
+                                                                                                                                         width="10%"/>
+                                                                                                                                </div>
+                                                                                                                                <div class="content g-col-19">
+                                                                                                                                    <div class="f-clear">
+                                                                                                                                        <span class="username f-float-left">{{ comments.add_time }}</span>
+                                                                                                                                        <span class="time f-float-left"></span>
+                                                                                                                                    </div>
+                                                                                                                                    <span class="parent-content">{{ comments.comments }}</span>
+                                                                                                                                    <ul class="child-comment">
+
+                                                                                                                                    </ul>
+                                                                                                                                </div>
+                                                                                                                            </li>
+                                                                                                                        {% endifequal %}
+                                                                                                                    {% endfor %}
+
+
+                                                                                                                </div>
+
+
+                                                                                                                <div id="review_form_wrapper">
+                                                                                                                    <div id="review_form">
+                                                                                                                        <div id="respond"
+                                                                                                                             class="comment-respond">
+                                                                                                                            <h3 id="reply-title"
+                                                                                                                                class="comment-reply-title">
+                                                                                                                                我要第一个评论!
+                                                                                                                                “{{ goods_info.name }}”
+                                                                                                                                <small>
+                                                                                                                                    <a rel="nofollow"
+                                                                                                                                       id="cancel-comment-reply-link"
+                                                                                                                                       href="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/?product=%E6%A4%8D%E7%89%A9%E8%8A%B1%E5%8D%89007#respond"
+                                                                                                                                       style="display:none;">取消回复</a>
+                                                                                                                                </small>
+                                                                                                                            </h3>
+                                                                                                                            <form action="{% url 'operation:course_comments' %}"
+                                                                                                                                  method="post"
+                                                                                                                                  id="commentform"
+                                                                                                                                  class="comment-form"
+                                                                                                                            >
+                                                                                                                                <p class="comment-form-rating">
+                                                                                                                                    <label for="rating">您的评级</label>
+                                                                                                                                <p class="stars">
+                                                                                                                                    <select name="rating"
+                                                                                                                                            id="rating"
+                                                                                                                                            style="">
+                                                                                                                                        <option value="">
+                                                                                                                                            处理中…
+                                                                                                                                        </option>
+                                                                                                                                        <option value="5">
+                                                                                                                                            完美
+                                                                                                                                        </option>
+                                                                                                                                        <option value="4">
+                                                                                                                                            很好
+                                                                                                                                        </option>
+                                                                                                                                        <option value="3">
+                                                                                                                                            普通
+                                                                                                                                        </option>
+                                                                                                                                        <option value="2">
+                                                                                                                                            还行
+                                                                                                                                        </option>
+                                                                                                                                        <option value="1">
+                                                                                                                                            极差
+                                                                                                                                        </option>
+                                                                                                                                    </select>
+                                                                                                                                </p>
+                                                                                                                                <p class="comment-form-comment">
+                                                                                                                                    <label for="comment">您的评论</label><span
+                                                                                                                                        class="commentdiv"><textarea
+                                                                                                                                        id="comment"
+                                                                                                                                        name="comment"
+                                                                                                                                        cols="45"
+                                                                                                                                        rows="8"
+                                                                                                                                        aria-required="true"></textarea></span>
+                                                                                                                                </p>
+                                                                                                                                <p class="form-submit">
+                                                                                                                                    <input name="submit"
+                                                                                                                                           type="submit"
+                                                                                                                                           id="submit"
+                                                                                                                                           value="提交">
+                                                                                                                                    <a href="javascript: void(0);"
+                                                                                                                                       class="dt-btn dt-btn-m">提交</a><input
+                                                                                                                                        type="hidden"
+                                                                                                                                        name="comment_post_ID"
+                                                                                                                                        value="13001"
+                                                                                                                                        id="comment_post_ID">
+                                                                                                                                    <input type="hidden"
+                                                                                                                                           name="comment_goods"
+                                                                                                                                           id="comment_goods"
+                                                                                                                                           value="{{ goods_info.id }}">
+                                                                                                                                </p>
+                                                                                                                                {% csrf_token %}
+                                                                                                                            </form>
+                                                                                                                        </div>
+                                                                                                                        <!-- #respond -->
+                                                                                                                    </div>
+                                                                                                                </div>
+
+
+                                                                                                                <div class="clear"></div>
+                                                                                                            </div>
+                                                                                                        </div>
+
+                                                                                                    </div>
+
+
+                                                                                                    <div class="related products">
+                                                                                                        <div class="mobile-columns-2 columns-4">
+                                                                                                            <h2>
+                                                                                                                相关商品</h2>
+
+                                                                                                            <ul class="products">
+                                                                                                                <div class="">
+
+                                                                                                                    {% for category in same_category %}
+                                                                                                                        <li class="post-13003 product type-product status-publish {% if  forloop.counter|divisibleby:4 %} last mobile_last {% endif %} product shipping-taxable purchasable product-type-simple product-cat-%e6%89%80%e6%9c%89%e5%95%86%e5%93%81 instock site_drag_container">
+                                                                                                                            <div class="wd_product_wrapper"
+                                                                                                                                 data-proid="13003">
+
+                                                                                                                                <div border="0"
+                                                                                                                                     width="100%"
+                                                                                                                                     style="table-layout:fixed;"
+                                                                                                                                     class="qfycustomtable">
+                                                                                                                                    <div class="qfycustomtr">
+
+                                                                                                                                        <div class="qfycustomtd lefttd"
+                                                                                                                                             valign="top">
+                                                                                                                                            <a class="product_a pitem"
+                                                                                                                                               href="{% url 'goods:info' category.id %}"
+                                                                                                                                               target="">
+                                                                                                                                                <div class="front-image product_img ">
+                                                                                                                                                    <img width="150"
+                                                                                                                                                         height="150"
+                                                                                                                                                         src="
+
+                                                                                                                                                                 {{ MEDIA_URL }}{{ category.image }}"
+                                                                                                                                                         class="attachment-shop_catalog"
+                                                                                                                                                         alt="p-13-300x300"
+                                                                                                                                                         title=""
+                                                                                                                                                         description=""
+                                                                                                                                                         data-title="p-13-300x300"
+                                                                                                                                                         src-img=""><i></i>
+                                                                                                                                                </div>
+                                                                                                                                            </a>
+
+                                                                                                                                        </div>
+                                                                                                                                        <div class="qfycustomtd righttd"
+                                                                                                                                             valign="top">
+                                                                                                                                            <a href="{% url 'goods:info' category.id %}"
+                                                                                                                                               target="">
+                                                                                                                                                <h3 class="product_title pitem">
+                                                                                                                                                    {{ category.name }}</h3>
+                                                                                                                                            </a>
+                                                                                                                                            <div class="pitem">
+
+                                                                                                                                            <span class="price"><span
+                                                                                                                                                    class="amount">¥{{ category.price }}</span></span>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </li>
+                                                                                                                    {% endfor %}
+
+                                                                                                                </div>
+                                                                                                            </ul>
+                                                                                                        </div>
+                                                                                                    </div>
+
+
+                                                                                                    <meta itemprop="url"
+                                                                                                          content="http://w-70982-96990-52773.10615136203.sites.cnfree04.qifeiye.com/?product=%e6%a4%8d%e7%89%a9%e8%8a%b1%e5%8d%89007">
+                                                                                                    <div style="clear:both;"></div>
+
+                                                                                                </div>
+                                                                                                <!-- #product-13001 -->
+
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <style class="column_class qfy_style_class">@media only screen and (min-width: 992px) {
+                                                                                .qfy-column-3-5b2f2bd6846c1618339 > .column_inner {
+                                                                                    padding-left: 0;
+                                                                                    padding-right: 0;
+                                                                                    padding-top: 0;
+                                                                                    padding-bottom: 0;
+                                                                                }
+
+                                                                                .qfe_row .vc_span_class.qfy-column-3-5b2f2bd6846c1618339 {
+                                                                                }
+
+                                                                            ;
+                                                                            }
+
+                                                                            @media only screen and (max-width: 992px) {
+                                                                                .qfy-column-3-5b2f2bd6846c1618339 > .column_inner {
+                                                                                    margin: 0 auto 0 !important;
+                                                                                    min-height: 0 !important;
+                                                                                    padding-left: 0;
+                                                                                    padding-right: 0;
+                                                                                    padding-top: 0;
+                                                                                    padding-bottom: 0;
+                                                                                }
+
+                                                                                .display_entire .qfe_row .vc_span_class.qfy-column-3-5b2f2bd6846c1618339 {
+                                                                                }
+
+                                                                                .qfy-column-3-5b2f2bd6846c1618339 > .column_inner > .background-overlay, .qfy-column-3-5b2f2bd6846c1618339 > .column_inner > .background-media {
+                                                                                    width: 100% !important;
+                                                                                    left: 0 !important;
+                                                                                    right: auto !important;
+                                                                                }
+                                                                            }</style>
+                                                                            <div data-animaleinbegin="90%"
+                                                                                 data-animalename="qfyfadeInUp"
+                                                                                 data-duration="1" data-delay=""
+                                                                                 class=" qfy-column-4-5b2f2bd6a05b1244352 qfy-column-inner  vc_span_class  vc_span3  text-Default small-screen-Default mobileHidden notfullrow"
+                                                                                 data-dw="1/4" data-fixheight="">
+                                                                                <div style="margin-top:0;margin-bottom:0;margin-left:30px;margin-right:0;border-radius:0px;;position:relative;"
+                                                                                     class="column_inner ">
+                                                                                    <div class=" background-overlay grid-overlay-0"
+                                                                                         style="background-color:transparent;width:100%;"></div>
+                                                                                    <div class="column_containter"
+                                                                                         style="z-index:3;position:relative;">
+                                                                                        <div m-padding="12px 0 8px 4px"
+                                                                                             p-padding="12px 12px 8px 12px"
+                                                                                             css_animation_delay="0"
+                                                                                             qfyuuid="qfy_column_text_49nzc"
+                                                                                             data-anitime="0.7"
+                                                                                             class="qfy-element qfy-text qfy-text-27118 qfe_text_column qfe_content_element  "
+                                                                                             style="position: relative;;;line-height:1.5em;;background-color: #000000;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:12px;padding-bottom:8px;padding-right:12px;padding-left:12px;border-radius:0px;">
+                                                                                            <div class="qfe_wrapper">
+                                                                                                <div style="position: relative;">
+                                                                                                    <div style="text-align: left;">
+                                                                                                        <span style="font-family:微软雅黑;"><span
+                                                                                                                style="color:#FFFFFF;"><span
+                                                                                                                style="font-size:15px;"><strong>金牌店鋪，值得信賴</strong></span></span></span>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div m-padding="6px 0px 6px 0px"
+                                                                                             p-padding="6px 12px 6px 12px"
+                                                                                             css_animation_delay="0"
+                                                                                             qfyuuid="qfy_column_text_bhx8g"
+                                                                                             data-anitime="0.7"
+                                                                                             class="qfy-element qfy-text qfy-text-92129 qfe_text_column qfe_content_element  "
+                                                                                             style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:6px;padding-bottom:6px;padding-right:12px;padding-left:12px;border-radius:0px;">
+                                                                                            <div class="qfe_wrapper">
+                                                                                                <div style="position: relative;">
+                                                                                                    <div style="text-align: left;">
+                                                                                                        <span style="font-family:微软雅黑;"><strong><span
+                                                                                                                style="font-size:12px;"><span
+                                                                                                                style="font-size:13px;"><span
+                                                                                                                style="color:#000000;">花语 HUAYU</span></span></span></strong></span>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div m-padding="6px 0px 6px 0px"
+                                                                                             p-padding="6px 12px 6px 12px"
+                                                                                             css_animation_delay="0"
+                                                                                             qfyuuid="qfy_column_text_oimg1"
+                                                                                             data-anitime="0.7"
+                                                                                             class="qfy-element qfy-text qfy-text-37544 qfe_text_column qfe_content_element  "
+                                                                                             style="position: relative;;;line-height:1.5em;;background-color: #f4f4f4;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:6px;padding-bottom:6px;padding-right:12px;padding-left:12px;border-radius:0px;">
+                                                                                            <div class="qfe_wrapper">
+                                                                                                <div style="position: relative;">
+                                                                                                    <div style="text-align: left;">
+                                                                                                        <span style="font-family:微软雅黑;"><span
+                                                                                                                style="word-spacing: normal;"><span
+                                                                                                                style="font-size: 13px;">信誉：</span></span><strong
+                                                                                                                style="word-spacing: normal;"><span
+                                                                                                                style="font-size:12px;"><span
+                                                                                                                style="font-size:13px;">★★★★★</span></span></strong></span>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div m-padding="6px 0px 6px 0px"
+                                                                                             p-padding="6px 12px 6px 12px"
+                                                                                             css_animation_delay="0"
+                                                                                             qfyuuid="qfy_column_text_l6lsq"
+                                                                                             data-anitime="0.7"
+                                                                                             class="qfy-element qfy-text qfy-text-60171 qfe_text_column qfe_content_element  "
+                                                                                             style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:6px;padding-bottom:6px;padding-right:12px;padding-left:12px;border-radius:0px;">
+                                                                                            <div class="qfe_wrapper">
+                                                                                                <div style="position: relative;">
+                                                                                                    <div style="text-align: left;">
+                                                                                                        <span style="font-family:微软雅黑;"><span
+                                                                                                                style="font-size: 13px; word-spacing: normal;">服务：{{ goods_core.service }}</span></span>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div m-padding="6px 0px 6px 0px"
+                                                                                             p-padding="6px 12px 6px 12px"
+                                                                                             css_animation_delay="0"
+                                                                                             qfyuuid="qfy_column_text_m6k57"
+                                                                                             data-anitime="0.7"
+                                                                                             class="qfy-element qfy-text qfy-text-85259 qfe_text_column qfe_content_element  mobile_fontsize "
+                                                                                             style="position: relative;;;line-height:1.5em;;background-color: #f4f4f4;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:6px;padding-bottom:6px;padding-right:12px;padding-left:12px;border-radius:0px;">
+                                                                                            <div class="qfe_wrapper">
+                                                                                                <div style="position: relative;">
+                                                                                                    <div style="text-align: left;">
+                                                                                                        <span style="font-family:微软雅黑;"><span
+                                                                                                                style="word-spacing: normal;"><span
+                                                                                                                style="font-size: 13px;">描述：{{ goods_core.desc }}</span></span></span>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div m-padding="6px 0px 6px 0px"
+                                                                                             p-padding="6px 12px 6px 12px"
+                                                                                             css_animation_delay="0"
+                                                                                             qfyuuid="qfy_column_text_mxgvz"
+                                                                                             data-anitime="0.7"
+                                                                                             class="qfy-element qfy-text qfy-text-30996 qfe_text_column qfe_content_element  mobile_fontsize "
+                                                                                             style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:6px;padding-bottom:6px;padding-right:12px;padding-left:12px;border-radius:0px;">
+                                                                                            <div class="qfe_wrapper">
+                                                                                                <div style="position: relative;">
+                                                                                                    <div style="text-align: left;">
+                                                                                                        <span style="font-family:微软雅黑;"><span
+                                                                                                                style="font-size: 13px; word-spacing: normal;">物流：{{ goods_core.logistics }}</span></span>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div m-padding="16px 0px 3px 0px"
+                                                                                             p-padding="16px 12px 3px 12px"
+                                                                                             css_animation_delay="0"
+                                                                                             qfyuuid="qfy_column_text_uevpm"
+                                                                                             data-anitime="0.7"
+                                                                                             class="qfy-element qfy-text qfy-text-84156 qfe_text_column qfe_content_element  "
+                                                                                             style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:16px;padding-bottom:3px;padding-right:12px;padding-left:12px;border-radius:0px;">
+                                                                                            <div class="qfe_wrapper">
+                                                                                                <div style="position: relative;">
+                                                                                                    <div style="text-align: left;">
+                                                                                                        <span style="font-family:微软雅黑;"><strong><span
+                                                                                                                style="font-size:12px;"><span
+                                                                                                                style="font-size:13px;"><span
+                                                                                                                style="color:#000000;">热卖商品</span></span></span></strong><span
+                                                                                                                style="color: rgb(0, 0, 0); font-size: 13px; text-align: left;">&nbsp;</span><strong><span
+                                                                                                                style="font-size:12px;"><span
+                                                                                                                style="font-size:13px;"><span
+                                                                                                                style="color:#000000;"></span></span></span></strong><span
+                                                                                                                style="font-size:12px;"><span
+                                                                                                                style="font-size:13px;"><span
+                                                                                                                style="color:#000000;">HOT SALE</span></span></span></span>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div id="" data-loading=""
+                                                                                             data-loading-w=""
+                                                                                             data-open="0"
+                                                                                             data-post="product"
+                                                                                             data-cate="0"
+                                                                                             m-padding="0px 0px 0px 0px"
+                                                                                             p-padding="0 0 0 0"
+                                                                                             css_animation_delay="0"
+                                                                                             qfyuuid="qfy_posts_grid_pucvx"
+                                                                                             class="qfy-element  UUID-POSTS-5b2f2bd6abea396417 qfe_teaser_grid qfe_content_element  qfe_grid columns_count_2 columns_count_2 qfe_teaser_grid_product  "
+                                                                                             style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-radius:0px;">
+                                                                                            <style>.UUID-POSTS-5b2f2bd6abea396417 li:hover .post-title > i.glyphicon {
+                                                                                                color: #cccccc !important;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 li:hover .post-title > a, .UUID-POSTS-5b2f2bd6abea396417 li:hover .post-title > div > a, .UUID-POSTS-5b2f2bd6abea396417 li:hover .post-title > span {
+                                                                                                color: #000000 !important;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 li:hover .post-title > span.toEditor {
+                                                                                                color: #fff !important;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 li:hover .subtitle {
+                                                                                                color: #cccccc !important;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 li:hover .itembody {
+                                                                                                background-color: transparent !important;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 li:hover .itembody {
+                                                                                                border-color: transparent !important;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 li:hover .vc_read_more {
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 li .itempcbody {
+                                                                                                padding: 0 0 5px 0;
+                                                                                            }
+
+                                                                                            @media only screen and (max-width: 992px) {
+                                                                                                .UUID-POSTS-5b2f2bd6abea396417 .vc_span_mobile {
+                                                                                                    float: left !important;
+                                                                                                    max-width: 49.9% !important;
+                                                                                                }
+
+                                                                                                .UUID-POSTS-5b2f2bd6abea396417 .post_blog .vc_span_mobile .blog-media {
+                                                                                                    width: auto !important;
+                                                                                                }
+
+                                                                                                .bit-html body .UUID-POSTS-5b2f2bd6abea396417 .vc_span_mobile {
+                                                                                                    padding-left: 0px !important;
+                                                                                                    padding-right: 0px !important;
+                                                                                                }
+
+                                                                                                .thumbnail_text-5b2f2bd6abe4f760 .head {
+                                                                                                    font-size: 16px !important;
+                                                                                                }
+
+                                                                                                .thumbnail_text-5b2f2bd6abe4f760 .content {
+                                                                                                    font-size: 16px !important;
+                                                                                                }
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 .qfy_item_post .price_warp .amount, .UUID-POSTS-5b2f2bd6abea396417 .qfy_item_post .price_warp del {
+                                                                                                color: #adadad;
+                                                                                                font-size: 13px;
+                                                                                                font-family: 宋体;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 .qfy_item_post .price_warp ins .amount {
+                                                                                                color: #adadad;
+                                                                                                font-size: 13px;
+                                                                                                font-family: 宋体;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 .qfy_item_post .price_warp {
+                                                                                                padding-top: 0px;
+                                                                                                padding-bottom: 0px;
+                                                                                                padding-left: 0px;
+                                                                                                padding-right: 0px;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 .qfy_item_post:hover .price_warp .amount, .UUID-POSTS-5b2f2bd6abea396417 .qfy_item_post:hover .price_warp del {
+                                                                                                color: #adadad !important;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 .qfy_item_post:hover .price_warp ins .amount {
+                                                                                                color: #adadad !important;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 li:hover {
+                                                                                                transition: all .6s ease;
+                                                                                            }
+
+                                                                                            .UUID-POSTS-5b2f2bd6abea396417 li {
+                                                                                                transition: all .6s ease;
+                                                                                            }</style>
+                                                                                            <div class="qfe_wrapper">
+                                                                                                <div class="teaser_grid_container noanimale"
+                                                                                                     style=";clear:both;"
+                                                                                                     data-type="product"
+                                                                                                     data-cate=" "
+                                                                                                     data-pcate="">
+                                                                                                    <ul style="min-height:60px;"
+                                                                                                        class="qfe_thumbnails qfe_thumbnails-fluid vc_clearfix  post_grid "
+                                                                                                        data-layout-mode="fitRows">
+                                                                                                        {% for hot_good in hot_goods %}
+                                                                                                            <li data-postid="15378"
+                                                                                                                data-animaleinbegin="90%"
+                                                                                                                data-animalename="qfyfadeInUp"
+                                                                                                                data-delay="0"
+                                                                                                                data-duration=""
+                                                                                                                class="   isotope-item qfy_item_post vc_span6 vc_span_mobile vc_span_mobile6 grid-cat-24 grid-cat-65 "
+                                                                                                                style="max-width:49.9%;margin-bottom:5px;padding-bottom:5px;">
+                                                                                                                <div class="itembody  itempcbody "
+                                                                                                                     style="border-top:0px solid transparent;border-bottom:0px solid transparent;border-left:0px solid transparent;border-right:0px solid transparent;background-color:transparent;">
+
+
+                                                                                                                    <div class="post-thumb blog-media wf-td"
+                                                                                                                         style="overflow:hidden;display:block;width: 100%;text-align: center;padding-bottom:10px;vertical-align:top;">
+                                                                                                                        <a href="{% url 'goods:info' hot_good.id %}"
+                                                                                                                           class="bitImageAhover   link_image"
+                                                                                                                           title="{{ hot_good.name }}"><img
+                                                                                                                                data-t-id="15375"
+                                                                                                                                style=""
+                                                                                                                                class=" ag_image"
+                                                                                                                                src="
+                                                                                                                                        {{ MEDIA_URL }}{{ hot_good.image }}"
+                                                                                                                                alt="p-6-300x300"
+                                                                                                                                description=""
+                                                                                                                                data-attach-id="15375"
+                                                                                                                                data-title="p-6-300x300"
+                                                                                                                                title=""
+                                                                                                                                src-img=""><i></i></a>
+                                                                                                                    </div>
+
+
+                                                                                                                    <div class="post-title"
+                                                                                                                         style="font-weight:normal;color:#666666;line-height:12px; vertical-align: top; text-align:center; ">
+
+                                                                                                                        <a data-title="true"
+                                                                                                                           style="color:#666666;font-size:12px;line-height:18px"
+                                                                                                                           href="{% url 'goods:info' hot_good.id %}"
+                                                                                                                           class="bitImageAhover   link_title"
+                                                                                                                           title="{{ hot_good.name }}">{{ hot_good.name }}</a>
+
+                                                                                                                    </div>
+
+
+                                                                                                                    <div class="price_warp ellipsis  ">
+                                                                                                                        <span class="amount">¥{{ hot_good.price }}</span>
+                                                                                                                    </div>
+
+
+                                                                                                                </div>
+
+
+                                                                                                            </li>
+                                                                                                            {% if forloop.counter|divisibleby:2 %}
+                                                                                                                <div class="wf-mobile-hidden"
+                                                                                                                     style="clear:both"></div>
+                                                                                                                <div class="wf-mobile-visible"
+                                                                                                                     style="clear:both"></div>
+                                                                                                            {% endif %}
+                                                                                                        {% endfor %}
+                                                                                                    </ul>
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="clear"></div>
+
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <style class="column_class qfy_style_class">@media only screen and (min-width: 992px) {
+                                                                                .qfy-column-4-5b2f2bd6a05b1244352 > .column_inner {
+                                                                                    padding-left: 0;
+                                                                                    padding-right: 0;
+                                                                                    padding-top: 0;
+                                                                                    padding-bottom: 0;
+                                                                                }
+
+                                                                                .qfe_row .vc_span_class.qfy-column-4-5b2f2bd6a05b1244352 {
+                                                                                }
+
+                                                                            ;
+                                                                            }
+
+                                                                            @media only screen and (max-width: 992px) {
+                                                                                .qfy-column-4-5b2f2bd6a05b1244352 > .column_inner {
+                                                                                    margin: 0 auto 0 !important;
+                                                                                    min-height: 0 !important;
+                                                                                    padding-left: 0;
+                                                                                    padding-right: 0;
+                                                                                    padding-top: 0;
+                                                                                    padding-bottom: 0;
+                                                                                }
+
+                                                                                .display_entire .qfe_row .vc_span_class.qfy-column-4-5b2f2bd6a05b1244352 {
+                                                                                }
+
+                                                                                .qfy-column-4-5b2f2bd6a05b1244352 > .column_inner > .background-overlay, .qfy-column-4-5b2f2bd6a05b1244352 > .column_inner > .background-media {
+                                                                                    width: 100% !important;
+                                                                                    left: 0 !important;
+                                                                                    right: auto !important;
+                                                                                }
+                                                                            }</style>
+                                                                            <div class="wf-mobile-hidden qfy-clumn-clear"
+                                                                                 style="clear:both;"></div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </section>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <style class="column_class qfy_style_class">@media only screen and (min-width: 992px) {
+                                                        .qfy-column-2-5b2f2bd68407d449506 > .column_inner {
+                                                            padding-left: 30px;
+                                                            padding-right: 30px;
+                                                            padding-top: 30px;
+                                                            padding-bottom: 30px;
+                                                        }
+
+                                                        .qfe_row .vc_span_class.qfy-column-2-5b2f2bd68407d449506 {
+                                                        }
+
+                                                    ;
+                                                    }
+
+                                                    @media only screen and (max-width: 992px) {
+                                                        .qfy-column-2-5b2f2bd68407d449506 > .column_inner {
+                                                            margin: 0 auto 0 !important;
+                                                            min-height: 0 !important;
+                                                            padding-left: 10px;
+                                                            padding-right: 10px;
+                                                            padding-top: 10px;
+                                                            padding-bottom: 10px;
+                                                        }
+
+                                                        .display_entire .qfe_row .vc_span_class.qfy-column-2-5b2f2bd68407d449506 {
+                                                        }
+
+                                                        .qfy-column-2-5b2f2bd68407d449506 > .column_inner > .background-overlay, .qfy-column-2-5b2f2bd68407d449506 > .column_inner > .background-media {
+                                                            width: 100% !important;
+                                                            left: 0 !important;
+                                                            right: auto !important;
+                                                        }
+                                                    }</style>
+                                                </div>
+                                            </div>
+
+                                        </section>
+                                    </div>
+
+
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div><!-- END .page-wrapper -->
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+
+                </div>
+
+            </div><!-- .wf-container -->
+        </div><!-- .wf-wrap -->
+    </div><!-- #main -->{% endblock %}

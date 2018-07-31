@@ -1,0 +1,45 @@
+{% extends 'customer_base.html' %}
+{% block rightslider %}
+    <div class="usermanage_rightslider"
+         style="border:1px solid #ddd;padding-bottom:20px;vertical-align: top;display:none;">
+        <div class="usermanage_content">
+            <div class="bit-order-list">
+                <div class="my_new_order_h2 ">
+                    <a class="onlyleft" style="margin-left:15px;cursor:pointer;" onclick="open_user_back();"><span
+                            class="fa fa-angle-left"></span>返回</a>
+                    <i class="fa fa-tags onlyright" style="margin-right:10px;"></i>
+                    优惠劵
+                </div>
+                <div class="my_tab_content">
+                    <div class="order_list" style="position:relative;">
+                        <div class="order_detail">
+                            <div id="coupons_list">
+                                <table border="1" width="100%">
+                                    <thead>
+                                    <tr>
+                                        <th>优惠券名</th>
+                                        <th>价格</th>
+                                        <th>开始时间</th>
+                                        <th>结束时间</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody align="center">
+                                    {% for coupon in user_coupon %}
+                                        <tr>
+                                            <td>{{ coupon.course }}</td>
+                                            <td>{{ coupon.price }}</td>
+                                            <td>{{ coupon.start_date }}</td>
+                                            <td>{{ coupon.end_date }}</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

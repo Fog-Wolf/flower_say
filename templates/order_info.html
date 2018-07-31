@@ -1,0 +1,116 @@
+{% extends 'customer_base.html' %}
+{% load staticfiles %}
+{% block title %}订单详情--花语{% endblock %}
+{% block rightslider %}
+    <div class="usermanage_rightslider"
+         style="border:1px solid #ddd;padding-bottom:20px;vertical-align: top;display:none;">
+        <div class="usermanage_content">
+            <div class="bit-order-list">
+                <div class="my_new_order_h2 ">
+                    <a class="onlyleft" style="margin-left:15px;cursor:pointer;" onclick="open_user_back();"><span
+                            class="fa fa-angle-left"></span>返回</a>
+                    <i class="fa fa- onlyright" style="margin-right:10px;"></i>订单详情 <a class="backbtn onlyright"
+                                                                                       style="cursor:pointer;float: right;margin-right:1px;"
+                                                                                       href="{% url "operation:user_order" 0 %}"><span
+                        class="fa fa-reply"></span></a>
+                </div>
+
+
+                <div class="my_tab_content">
+                    <div class="order_list" style="position:relative;min-height:300px;">
+
+                        <div class="order_detail">
+                            <h2>订单详情</h2>
+                            <table class="shop_table order_details">
+                                <thead>
+                                <tr>
+                                    <th class="product-name">商品</th>
+                                    <th class="product-total">合计</th>
+                                </tr>
+                                </thead>
+                                <tfoot>
+                                <tr class="cart-subtotal">
+                                    <th scope="row">购物小计：</th>
+                                    <td style=""><span class="amount">¥{{ order.all_price }}</span></td>
+                                </tr>
+                                <tr class="">
+                                    <th scope="row">配送:</th>
+                                    <td style="">免费送货</td>
+                                </tr>
+                                <tr class="order-total">
+                                    <th scope="row">订单合计：</th>
+                                    <td style="font-weight:bold"><span class="amount">¥{{ order.all_price }}</span></td>
+                                </tr>
+                                </tfoot>
+                                <tbody>
+                                <tr data-proid="13001" class="order_item">
+                                    <td class="product-name mainProductname">
+                                        <a href="{% url 'goods:info' order.course.id %}">
+                                            {{ order.course.name }} <strong
+                                                class="product-quantity">× {{ order.nums }}</strong> </a>
+
+                                    </td>
+                                    <td class="product-total mainProductname">
+                                        <span class="amount">¥{{ order.all_price }}</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <header>
+                                <h2>客户详情</h2>
+                            </header>
+                            <table class="customer_details shop_table">
+                                <tbody>
+                                <tr>
+                                    <th width="80">Email:</th>
+                                    <td>{{ order.user.email }}</td>
+                                </tr>
+                                <tr>
+                                    <th>电话：</th>
+                                    <td>{{ order_address.shou_phone }}</td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2" style="padding-left:15px;" class="address_wrap">
+
+
+                                        <div class="col2-set addresses">
+
+                                            <div class="col-1">
+
+
+                                                <header class="title">
+                                                    <h3>账单地址</h3>
+                                                </header>
+                                                <address><p>
+                                                    城市：<br>
+                                                    &nbsp;&nbsp;{{ order_address.city.name }}<br>
+                                                    收货地址：<br>
+                                                    &nbsp;&nbsp;{{ order_address.shou_address }}<br>
+                                                    收件人：<br>
+                                                    &nbsp;&nbsp;{{ order_address.shou_name }} </p></address>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                            <div class="clear"></div>
+
+                            <div style="padding:20px 0;"><a href="http://59dadbbaac436.t74.qifeiye.com/?page_id=15787#"
+                                                            onclick="toorderpage(&quot;15787&quot;)"
+                                                            class="button second_button back">返回</a></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,334 @@
+{% extends 'base.html' %}
+{% block title %}购物车--花语{% endblock %}
+{% block content %}
+    <div id="main" class="bit_main_content">
+
+
+        <div class="main-gradient"></div>
+
+        <div class="wf-wrap">
+            <div class="wf-container-main">
+
+
+                <div id="content" class="content" role="main">
+
+
+                    <div class="main-outer-wrapper ">
+                        <div class="bit_row">
+
+                            <div class="twelve columns no-sidebar-content ">
+
+                                <div class="bit_row">
+
+                                    <div class="content-wrapper twelve columns ">
+                                        <section data-fixheight=""
+                                                 class="qfy-row-1-5b445726ab4fe437055 section     no  section-text-no-shadow section-inner-no-shadow section-normal"
+                                                 id="bit_nsws8"
+                                                 style="margin-bottom:0;border-radius:0px;color:#666666;">
+                                            <style class="row_class qfy_style_class">
+                                                @media only screen and (min-width: 992px) {
+                                                    section.section.qfy-row-1-5b445726ab4fe437055 {
+                                                        padding-left: 0;
+                                                        padding-right: 0;
+                                                        padding-top: 30px;
+                                                        padding-bottom: 100px;
+                                                        margin-top: 0;
+                                                        min-height: 50vh;
+                                                    }
+
+                                                    section.section.qfy-row-1-5b445726ab4fe437055 > .container {
+                                                        max-width: 1100px;
+                                                        margin: 0 auto;
+                                                    }
+                                                }
+
+                                                @media only screen and (max-width: 992px) {
+                                                    .bit-html section.section.qfy-row-1-5b445726ab4fe437055 {
+                                                        padding-left: 15px;
+                                                        padding-right: 15px;
+                                                        padding-top: 30px;
+                                                        padding-bottom: 100px;
+                                                        margin-top: 0;
+                                                        min-height: 0;
+                                                    }
+                                                }
+                                            </style>
+                                            <div class="section-background-overlay background-overlay grid-overlay-0 "
+                                                 style="background-color: #ffffff;"></div>
+
+                                            <div class="container">
+                                                <div class="row qfe_row">
+                                                    <div data-animaleinbegin="bottom-in-view"
+                                                         data-animalename="qfyfadeInUp" data-duration="" data-delay=""
+                                                         class=" qfy-column-1-5b445726ab71d130989 qfy-column-inner  vc_span12  text-default small-screen-default fullrow"
+                                                         data-dw="1/1" data-fixheight="">
+                                                        <div style=";position:relative;" class="column_inner ">
+                                                            <div class=" background-overlay grid-overlay-"
+                                                                 style="background-color:transparent;width:100%;"></div>
+                                                            <div class="column_containter"
+                                                                 style="z-index:3;position:relative;">
+                                                                <div m-padding="0px 0px 0px 0px"
+                                                                     p-padding="0px 0px 0px 0px" css_animation_delay="0"
+                                                                     qfyuuid="0" class="qfy-element qfy_cart qfy_wc_div"
+                                                                     style="">
+                                                                    <div class="bitcommerce defaultminheight bit_row">
+                                                                        <div class="qfy-wcnotice"
+                                                                             data-atts="YToxOntzOjE0OiJpc19tb2JpbGVfZm9ybSI7aTowO30=">
+                                                                        </div>
+
+                                                                        <form action="http://59dadbbaac436.t74.qifeiye.com/?page_id=9620"
+                                                                              method="post" class="wf-mobile-hidden">
+                                                                            <div class="eight columns">
+                                                                                <div class="cart-wrapper"
+                                                                                     style="padding-right:30px; border-right: 1px solid #ddd;">
+                                                                                    <table class="shop_table cart "
+                                                                                           cellspacing="0"
+                                                                                           style="width:100%;">
+                                                                                        <thead>
+                                                                                        <tr>
+                                                                                            <th class="product-remove first"
+                                                                                                colspan="3">商品
+                                                                                            </th>
+
+                                                                                            <th class="product-price">
+                                                                                                价格
+                                                                                            </th>
+                                                                                            <th class="product-quantity">
+                                                                                                数量
+                                                                                            </th>
+                                                                                            <th class="product-subtotal last">
+                                                                                                合计
+                                                                                            </th>
+
+                                                                                        </tr>
+                                                                                        </thead>
+                                                                                        <tbody>
+                                                                                        {% for course in courses %}
+                                                                                            <tr data-proid="12992"
+                                                                                                class="cart_item">
+
+                                                                                                <td class="product-removelink">
+                                                                                                    <a
+                                                                                                       style="border:0;cursor:pointer;"
+                                                                                                       title="移除本项"
+                                                                                                       href="{% url 'operation:base_channel' course.id %}"><i
+                                                                                                            style="font-size:18px;"
+                                                                                                            class="glyphicon glyphicon-remove-circle"></i></a>
+                                                                                                </td>
+
+                                                                                                <td class="product-thumbnail"
+                                                                                                    style="">
+                                                                                                    <div class="wd_product_content">
+                                                                                                        <div class="wd_product_item">
+                                                                                                            <a href="{% url 'goods:info' course.course.id %}"><img
+                                                                                                                    width="90"
+                                                                                                                    height="90"
+                                                                                                                    src="
+                                                                                                                            {{ MEDIA_URL }}{{ course.course.image }}"
+                                                                                                                    class="attachment-shop_thumbnail qf-post-image"
+                                                                                                                    alt="p-14-300x300"
+                                                                                                                    title=""
+                                                                                                                    description=""
+                                                                                                                    data-title="p-14-300x300"></a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <!-- Product Name -->
+
+                                                                                                </td>
+                                                                                                <td class="product-name">
+                                                                                                    <a href="">{{ course.course.name }}</a>
+                                                                                                </td>
+                                                                                                <td class="product-price">
+                                                                                                    <span class="amount">¥{{ course.course.price }}</span>
+                                                                                                </td>
+
+                                                                                                <td class="product-quantity">
+                                                                                                    <div class="quantity buttons_added">
+                                                                                                        <a type="button" class="minus" href="{% url "operation:sub_num" course.id %}">-</a><input
+                                                                                                            type="text"
+                                                                                                            data-default-value=""
+                                                                                                            step="1"
+                                                                                                            name="cart[ec2f08ae409f4a81a531d63db671d55f][qty]"
+                                                                                                            value="{{ course.nums }}"
+                                                                                                            title="数量"
+                                                                                                            class="input-text qty text"
+                                                                                                            autocomplete="off"
+                                                                                                            size="4">
+                                                                                                        <a type="button"  class="plus" href="{% url "operation:add_num" course.id %}">+</a>
+                                                                                                    </div>
+                                                                                                </td>
+                                                                                                <td class="product-subtotal">
+                                                                                                    <span class="amount">¥{{ course.all_price }}</span>
+                                                                                                </td>
+
+                                                                                            </tr>
+                                                                                        {% endfor %}
+                                                                                        </tbody>
+                                                                                    </table>
+
+                                                                                    <div id="coupons_list">
+                                                                                        <div id="all_coupon_container">
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="four columns ">
+                                                                                <div class="cart-sidebar actions"
+                                                                                     style="padding-left:30px;">
+                                                                                    <div class="cart-collaterals">
+                                                                                        <div class="cart_totals ">
+
+                                                                                            <div class="cart_totals_wrapper">
+                                                                                                <h2>购物车总计</h2>
+
+                                                                                                <table cellspacing="0"
+                                                                                                       class="cart-sub-table"
+                                                                                                       style="width:100%">
+
+                                                                                                    <tbody>
+                                                                                                    <tr class="cart-subtotal">
+                                                                                                        <th>购物车小计</th>
+                                                                                                        <td><span
+                                                                                                                class="amount">¥{{ sum_price }}</span>
+                                                                                                        </td>
+                                                                                                    </tr>
+
+
+                                                                                                    <tr class="shipping ">
+                                                                                                        <th>运费</th>
+                                                                                                        <td>
+
+                                                                                                            免费送货 <input
+                                                                                                                type="hidden"
+                                                                                                                name="shipping_method[0]"
+                                                                                                                data-index="0"
+                                                                                                                id="shipping_method_0"
+                                                                                                                value="free_shipping"
+                                                                                                                class="shipping_method">
+
+
+                                                                                                        </td>
+                                                                                                    </tr>
+
+
+                                                                                                    <tr class="order-total">
+                                                                                                        <th>订单总计</th>
+                                                                                                        <td><span
+                                                                                                                class="amount">¥{{ sum_price }}</span>
+                                                                                                        </td>
+                                                                                                    </tr>
+
+
+                                                                                                    </tbody>
+                                                                                                </table>
+
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                    <div class="cart_buttons">
+
+                                                                                        <div class="cart_sumbit_buttons"
+                                                                                             style="margin:20px 0;">
+                                                                                            <!-- <input type="submit" class="button second_button"  style="margin-bottom:10px;" name="update_cart" value="更新购物车" /> -->
+                                                                                            <input type="submit"
+                                                                                                   class="first_button checkout-button button alt wc-forward"
+                                                                                                   name="proceed"
+                                                                                                   value="前往收银台">
+                                                                                        </div>
+
+                                                                                        <input type="hidden"
+                                                                                               id="_qfnonce"
+                                                                                               name="_qfnonce"
+                                                                                               value="31c89817e6"><input
+                                                                                            type="hidden"
+                                                                                            name="_qf_http_referer"
+                                                                                            value="/?page_id=9620">
+                                                                                        <div class="coupon">
+
+                                                                                            <h3 for="coupon_code">
+                                                                                                优惠券:</h3>
+                                                                                            <input type="text"
+                                                                                                   name="coupon_code"
+                                                                                                   class="input-text"
+                                                                                                   id="coupon_code"
+                                                                                                   value=""
+                                                                                                   placeholder="优惠券代码">
+                                                                                            <input type="submit"
+                                                                                                   class="button"
+                                                                                                   name="apply_coupon"
+                                                                                                   value="使用优惠券">
+                                                                                            <br>
+                                                                                        </div>
+
+
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
+
+                                                                        <div style="clear:both"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <style class="column_class qfy_style_class">@media only screen and (min-width: 992px) {
+                                                        .qfy-column-1-5b445726ab71d130989 > .column_inner {
+                                                            padding-left: 0;
+                                                            padding-right: 0;
+                                                            padding-top: 0;
+                                                            padding-bottom: 0;
+                                                        }
+
+                                                        .qfe_row .vc_span_class.qfy-column-1-5b445726ab71d130989 {
+                                                        }
+
+                                                    ;
+                                                    }
+
+                                                    @media only screen and (max-width: 992px) {
+                                                        .qfy-column-1-5b445726ab71d130989 > .column_inner {
+                                                            margin: 0 auto 0 !important;
+                                                            padding-left: 0;
+                                                            padding-right: 0;
+                                                            padding-top:;
+                                                            padding-bottom:;
+                                                        }
+
+                                                        .display_entire .qfe_row .vc_span_class.qfy-column-1-5b445726ab71d130989 {
+                                                        }
+
+                                                        .qfy-column-1-5b445726ab71d130989 > .column_inner > .background-overlay, .qfy-column-1-5b445726ab71d130989 > .column_inner > .background-media {
+                                                            width: 100% !important;
+                                                            left: 0 !important;
+                                                            right: auto !important;
+                                                        }
+                                                    }</style>
+                                                </div>
+                                            </div>
+
+                                        </section>
+                                    </div>
+
+
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div><!-- END .page-wrapper -->
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+
+                </div>
+
+            </div><!-- .wf-container -->
+        </div><!-- .wf-wrap -->
+    </div><!-- #main -->
+{% endblock %}
